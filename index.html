@@ -1,0 +1,1176 @@
+﻿<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Admin</title>
+
+    <!-- Vendor CSS -->
+    <link href="vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+    <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+    <link href="vendors/bower_components/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+    <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/app_1.min.css" rel="stylesheet">
+    <link href="css/app_2.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header" class="clearfix" data-ma-theme="bluegray">
+        <ul class="h-inner">
+            <li class="hi-trigger ma-trigger" data-ma-action="sidebar-open" data-ma-target="#sidebar">
+                <div class="line-wrap">
+                    <div class="line top"></div>
+                    <div class="line center"></div>
+                    <div class="line bottom"></div>
+                </div>
+            </li>
+
+            <li class="hi-logo hidden-xs">
+                <a href="index.html">Reichmans<b>Capital</b></a>
+            </li>
+
+            <li class="pull-right">
+                <ul class="hi-menu">
+                    <li class="hidden-xs ma-trigger" data-ma-action="sidebar-open" data-ma-target="#chat">
+                        <a href=""><i class="him-icon zmdi zmdi-comment-alt-text"></i></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Top Search Content -->
+        <div class="h-search-wrap">
+            <div class="hsw-inner">
+                <i class="hsw-close zmdi zmdi-arrow-left" data-ma-action="search-close"></i>
+                <input type="text">
+            </div>
+        </div>
+    </header>
+
+    <section id="main">
+        <aside id="sidebar" class="sidebar c-overflow">
+            <div class="s-profile">
+                <a href="" data-ma-action="profile-menu-toggle">
+                    <div class="sp-pic">
+                        <img id="selectedCompanyPic" src="img/custom/P.png" alt="">
+                    </div>
+
+                    <div id="selectedCompanyName" class="sp-info">
+                        Parent Company Pty Ltd
+
+                    </div>
+                </a>
+            </div>
+
+            <ul class="main-menu">
+                <li class="active">
+                    <a href="index.html"><i class="zmdi zmdi-home"></i> Home</a>
+                </li>
+                <li class="sub-menu">
+                    <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-chart"></i> Documents</a>
+
+                    <ul>
+                        <li><a href="dashboards/analytics.html">Asset Finance</a></li>
+                        <li><a href="dashboards/school.html">Debtor Finance</a></li>
+                        <li><a href="dashboards/school.html">Trade Finance</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-view-compact"></i> Headers</a>
+
+                    <ul>
+                        <li><a href="textual-menu.html">Textual menu</a></li>
+                        <li><a href="image-logo.html">Image logo</a></li>
+                        <li><a href="top-mainmenu.html">Mainmenu on top</a></li>
+                    </ul>
+                </li>
+                <li><a href="typography.html"><i class="zmdi zmdi-format-underlined"></i> Typography</a></li>
+                <li class="sub-menu">
+                    <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-widgets"></i> Widgets</a>
+
+                    <ul>
+                        <li><a href="widget-templates.html">Templates</a></li>
+                        <li><a href="widgets.html">Widgets</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-view-list"></i> Tables</a>
+
+                    <ul>
+                        <li><a href="tables.html">Normal Tables</a></li>
+                        <li><a href="data-tables.html">Data Tables</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-collection-text"></i> Forms</a>
+
+                    <ul>
+                        <li><a href="form-elements.html">Basic Form Elements</a></li>
+                        <li><a href="form-components.html">Form Components</a></li>
+                        <li><a href="form-examples.html">Form Examples</a></li>
+                        <li><a href="form-validations.html">Form Validation</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-swap-alt"></i>User Interface</a>
+                    <ul>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="buttons.html">Buttons</a></li>
+                        <li><a href="icons.html">Icons</a></li>
+                        <li><a href="alerts.html">Alerts</a></li>
+                        <li><a href="preloaders.html">Preloaders</a></li>
+                        <li><a href="notification-dialog.html">Notifications & Dialogs</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="components.html">Components</a></li>
+                        <li><a href="other-components.html">Others</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-trending-up"></i>Charts & Maps</a>
+                    <ul>
+                        <li><a href="flot-charts.html">Flot Charts</a></li>
+                        <li><a href="other-charts.html">Other Charts</a></li>
+                        <li><a href="maps.html">Maps</a></li>
+                    </ul>
+                </li>
+                <li><a href="calendar.html"><i class="zmdi zmdi-calendar"></i> Calendar</a></li>
+                <li class="sub-menu">
+                    <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-image"></i>Photo Gallery</a>
+                    <ul>
+                        <li><a href="photos.html">Default</a></li>
+                        <li><a href="photo-timeline.html">Timeline</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="generic-classes.html"><i class="zmdi zmdi-layers"></i> Generic Classes</a></li>
+                <li class="sub-menu">
+                    <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-collection-item"></i> Sample Pages</a>
+                    <ul>
+                        <li><a href="profile-about.html">Profile</a></li>
+                        <li><a href="list-view.html">List View</a></li>
+                        <li><a href="messages.html">Messages</a></li>
+                        <li><a href="pricing-table.html">Pricing Table</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="wall.html">Wall</a></li>
+                        <li><a href="invoice.html">Invoice</a></li>
+                        <li><a href="login.html">Login and Sign Up</a></li>
+                        <li><a href="lockscreen.html">Lockscreen</a></li>
+                        <li><a href="404.html">Error 404</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-menu"></i> 3 Level Menu</a>
+
+                    <ul>
+                        <li><a href="form-elements.html">Level 2 link</a></li>
+                        <li><a href="form-components.html">Another level 2 Link</a></li>
+                        <li class="sub-menu">
+                            <a href="" data-ma-action="submenu-toggle">I have children too</a>
+
+                            <ul>
+                                <li><a href="">Level 3 link</a></li>
+                                <li><a href="">Another Level 3 link</a></li>
+                                <li><a href="">Third one</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="form-validations.html">One more 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://wrapbootstrap.com/theme/material-admin-responsive-angularjs-WB011H985"><i class="zmdi zmdi-money"></i> Buy this template</a>
+                </li>
+            </ul>
+        </aside>
+
+        <aside id="chat" class="sidebar">
+            <div class="lg-body c-overflow">
+                <div class="list-group">
+                    <a class="list-group-item media" href="#">
+                        <div class="pull-left p-relative">
+                            <img class="lgi-img" src="img/custom/P.png" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading"><b>Parent Company Pty Ltd</b></div>
+                        </div>
+                    </a>
+
+                    <a class="list-group-item media" href="#">
+                        <div class="pull-left">
+                            <img class="lgi-img" src="img/custom/A.png" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Company A Pty Ltd</div>
+                        </div>
+                    </a>
+
+                    <a class="list-group-item media" href="#">
+                        <div class="pull-left">
+                            <img class="lgi-img" src="img/custom/B.png" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Company B Pty Ltd</div>
+                        </div>
+                    </a>
+
+                    <a class="list-group-item media" href="#">
+                        <div class="pull-left">
+                            <img class="lgi-img" src="img/custom/C.png" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Company C Pty Ltd</div>
+                        </div>
+                    </a>
+
+                    <a class="list-group-item media" href="#">
+                        <div class="pull-left">
+                            <img class="lgi-img" src="img/custom/D.png" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Company D Pty Ltd</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <section id="content">
+            <div class="container" id="summaryView">
+                <div class="block-header">
+                    <h2>Dashboard</h2>
+                </div>
+                <!--<div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+
+                            </div>
+                            <div class="card-body">
+
+                                <div class="list-group">
+                                    <a class="list-group-item media" href="#">
+                                        <div class="pull-left p-relative">
+                                            <img class="lgi-img" src="img/custom/P.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div>
+                                                December
+                                                <ul class="actions pull-right">
+                                                    <li>
+                                                        <i class="zmdi zmdi-download"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item media" href="#">
+                                        <div class="pull-left">
+                                            <img class="lgi-img" src="img/custom/A.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="lgi-heading">November</div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item media" href="#">
+                                        <div class="pull-left">
+                                            <img class="lgi-img" src="img/custom/B.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="lgi-heading">October</div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item media" href="#">
+                                        <div class="pull-left">
+                                            <img class="lgi-img" src="img/custom/C.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="lgi-heading">September</div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item media" href="#">
+                                        <div class="pull-left">
+                                            <img class="lgi-img" src="img/custom/D.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="lgi-heading">August</div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item media" href="#">
+                                        <div class="pull-left p-relative">
+                                            <img class="lgi-img" src="img/custom/P.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="lgi-heading">July</div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item media" href="#">
+                                        <div class="pull-left">
+                                            <img class="lgi-img" src="img/custom/A.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="lgi-heading">June</div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item media" href="#">
+                                        <div class="pull-left">
+                                            <img class="lgi-img" src="img/custom/B.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="lgi-heading">May</div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item media" href="#">
+                                        <div class="pull-left">
+                                            <img class="lgi-img" src="img/custom/C.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="lgi-heading">April</div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item media" href="#">
+                                        <div class="pull-left">
+                                            <img class="lgi-img" src="img/custom/D.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="lgi-heading">March</div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item media" href="#">
+                                        <div class="pull-left">
+                                            <img class="lgi-img" src="img/custom/D.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="lgi-heading">February</div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item media" href="#">
+                                        <div class="pull-left">
+                                            <img class="lgi-img" src="img/custom/D.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="lgi-heading">January</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>-->
+                <div class="row">
+                    <div class="col-md-3"> </div>
+                    <div class="col-md-6">
+                        <div class="card" id="parentCard">
+                            <div class="card-header">
+                                <h2>
+                                    Parent Company Pty Ltd
+                                </h2>
+                                <!--<ul class="actions">
+                                    <li>
+                                        <a href="">
+                                            <i class="zmdi zmdi-refresh-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="zmdi zmdi-download"></i>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="" data-toggle="dropdown">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>
+                                                <a href="">Change Date Range</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Change Graph Type</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Other Settings</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>-->
+
+                                <!--<button class="btn bgm-red btn-float waves-effect">
+                                    <i class="zmdi zmdi-plus"></i>
+                                </button>-->
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="card-body">
+                                            <div class="col-md-2">
+                                                <img class="lgi-img" src="img/custom/DF.png" alt="">
+                                            </div>
+                                            <div class="col-md-10">
+                                                <p style="margin-bottom:0px">Facility: R 40,000,000.00</p>
+                                                <p>Exposure: R R 153,591,625.61</p>
+                                                <b><p>Available for drawdown: R 22,137,744.10</p></b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="card-body">
+                                            <div class="col-md-2">
+                                                <img class="lgi-img" src="img/custom/TF.png" alt="">
+                                            </div>
+                                            <div class="col-md-10">
+                                                <p style="margin-bottom:0px">Facility: R 211,600,000.00</p>
+                                                <p>Exposure: R 153,591,625.61</p>
+                                                <b><p>Available for drawdown: R 58,008,374.39</p></b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="view-more" href="#" id="viewParentCompanyDetail">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3"> </div>
+                </div>
+
+                <div class="row row-no-bottom-margin" style="margin-bottom:0;padding-bottom:0">
+                    <div class="col-md-6 col-md-offset-6 border-left" style="height: 50px; border-left:3px solid #3F51B5"></div>
+                </div>
+
+                <div class="row row-no-bottom-margin" style="margin-bottom:0;padding-bottom:0">
+
+                    <div class="col-md-2 border-right" style="height: 30px;border-right:3px solid #3F51B5"></div>
+                    <div class="col-md-1 border-top" style="height: 30px;border-top:3px solid #3F51B5"></div>
+                    <div class="col-md-1 border-top border-right" style="height: 30px;border-right:3px solid #3F51B5;border-top:3px solid #3F51B5"></div>
+                    <div class="col-md-1 border-top" style="height: 30px;border-top:3px solid #3F51B5"></div>
+                    <div class="col-md-3 border-top border-right" style="height: 30px;border-right:3px solid #3F51B5;border-top:3px solid #3F51B5"></div>
+                    <div class="col-md-1 border-top" style="height: 30px;border-top:3px solid #3F51B5"></div>
+                    <div class="col-md-1 border-top border-right" style="height: 30px;border-right:3px solid #3F51B5;border-top:3px solid #3F51B5"></div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Company A Pty Ltd</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="col-md-2">
+                                    <img class="lgi-img" src="img/custom/DF.png" alt="">
+                                </div>
+                                <div class="col-md-10">
+                                    <p style="margin-bottom:0px">Facility: R 36,000,000.00</p>
+                                    <p>Exposure: R 31,088,190.24</p>
+                                    <b><p>Available for drawdown: R 3,164,732.42</p></b>
+                                </div>
+                                <a class="view-more" href="#" id="viewCompanyADetail">View More</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Company B Pty Ltd</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="col-md-2">
+                                    <img class="lgi-img" src="img/custom/DF.png" alt="">
+                                </div>
+                                <div class="col-md-10">
+                                    <p style="margin-bottom:0px">Facility: R 25,000,000.00</p>
+                                    <p>Exposure: R 7,108,228.19</p>
+                                    <b><p>Available for drawdown: R 1,106,418.5</p></b>
+                                </div>
+                                <a class="view-more" href="#" id="viewCompanyBDetail">View More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Company C Pty Ltd</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="col-md-2">
+                                    <img class="lgi-img" src="img/custom/TF.png" alt="">
+                                </div>
+                                <div class="col-md-10">
+                                    <p style="margin-bottom:0px">Facility: R 6,000,000.00</p>
+                                    <p>Exposure: R 4,236,568.16</p>
+                                    <b><p>Available for drawdown: R1,763,431.84</p></b>
+                                </div>
+                                <a class="view-more" href="#" id="viewCompanyCDetail">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Company D Pty Ltd</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="col-md-2">
+                                    <img class="lgi-img" src="img/custom/AF.png" alt="">
+                                </div>
+                                <div class="col-md-10">
+                                    <p style="margin-bottom:0px">Facility: R 6,000,000.00</p>
+                                    <p>Exposure: R 4,236,568.16</p>
+                                    <b><p>Available for drawdown: R1,763,431.84</p></b>
+                                </div>
+                                <a class="view-more" href="#" id="viewCompanyDDetail">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container" id="detailViewParent" style="display: none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2><button id="backToSummaryFromParent" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; Parent Company Pty Ltd</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div role="tabpanel" class="tab" style="padding: 10px 10px 10px 10px">
+                                        <ul class="tab-nav" role="tablist">
+                                            <li class="active">
+                                                <a href="#home9" aria-controls="home9" role="tab"
+                                                   data-toggle="tab">Debtor Finance</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#messages9" aria-controls="messages9"
+                                                   role="tab" data-toggle="tab">Trade Finance</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active animated fadeInRight in" id="home9">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Total Approved Assets</td>
+                                                                <td class="text-right">R 24,805,051.75</td>
+                                                                <td></td>
+                                                                <td class="text-right">R 40,000,000.00</td>
+                                                                <td>Facility</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Exposure</td>
+                                                                <td class="text-right">R 4,667,307.68</td>
+                                                                <td></td>
+                                                                <td class="text-right">R 3,000,000.00</td>
+                                                                <td>Temporary Facility</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Current</td>
+                                                                <td class="gray-single-border text-right">R 20,137,744.10</td>
+                                                                <td></td>
+                                                                <td class="gray-single-border text-right">R 43,000,000.00</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Overdraft</td>
+                                                                <td class="text-right">R 2,000,000.00</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Available for Drawdown</td>
+                                                                <td class="gray-single-border text-right">R 22,137,744.10</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane animated fadeInRight" id="messages9">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Orders Outstanding</td>
+                                                                <td class="text-right">R 117,574,366.64</td>
+                                                                <td></td>
+                                                                <td class="text-right">R 208,600,000.00</td>
+                                                                <td>Facility</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Invoices Outstanding</td>
+                                                                <td class="text-right">R 6,842.89</td>
+                                                                <td></td>
+                                                                <td class="text-right">R 3,000,000.00</td>
+                                                                <td>Temporary Facility</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Exposure</td>
+                                                                <td class="text-right gray-single-border">R 153,591,625.61</td>
+                                                                <td></td>
+                                                                <td class="text-right gray-single-border">R 211,600,000.00</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Available for Drawdown</td>
+                                                                <td class="text-right gray-single-border">R 58,008,374.39</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="container" id="detailViewA" style="display: none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2><button id="backToSummaryFromA" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp; Company A Pty Ltd</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="table-responsive" style="padding: 10px 10px 30px 10px">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Total Approved Assets</td>
+                                                    <td class="text-right">R 27,923,397.82</td>
+                                                    <td></td>
+                                                    <td class="text-right">R 36,000,000.00</td>
+                                                    <td>Facility</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exposure</td>
+                                                    <td class="text-right">R 31,088,190.24</td>
+                                                    <td></td>
+                                                    <td class="text-right"></td>
+                                                    <td>Temporary Facility</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Current</td>
+                                                    <td class="gray-single-border text-right">R 3,164,792.42</td>
+                                                    <td></td>
+                                                    <td class="gray-single-border text-right">R 36,000,000.00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Overdraft</td>
+                                                    <td class="text-right"></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Available for Drawdown</td>
+                                                    <td class="gray-single-border text-right">R 3,164,792.42</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="container" id="detailViewB" style="display: none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2><button id="backToSummaryFromB" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp; Company B Pty Ltd</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="table-responsive" style="padding: 10px 10px 30px 10px">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Total Approved Assets</td>
+                                                    <td class="text-right">R 6,001,809.69</td>
+                                                    <td></td>
+                                                    <td class="text-right">R 25,000,000.00</td>
+                                                    <td>Facility</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exposure</td>
+                                                    <td class="text-right">R 7,108,228.19</td>
+                                                    <td></td>
+                                                    <td class="text-right"></td>
+                                                    <td>Temporary Facility</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Current</td>
+                                                    <td class="gray-single-border text-right">R 1,106,418.50</td>
+                                                    <td></td>
+                                                    <td class="gray-single-border text-right">R 25,000,000.00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Overdraft</td>
+                                                    <td class="text-right"></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Available for Drawdown</td>
+                                                    <td class="gray-single-border text-right">R 1,106,418.50</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="container" id="detailViewC" style="display: none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2><button id="backToSummaryFromC" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp; Company C Pty Ltd</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="table-responsive" style="padding: 10px 10px 30px 10px">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Orders Outstanding</td>
+                                                    <td class="text-right">R 117,574,366.64</td>
+                                                    <td></td>
+                                                    <td class="text-right">R 208,600,000.00</td>
+                                                    <td>Facility</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Invoices Outstanding</td>
+                                                    <td class="text-right">R 6,842.89</td>
+                                                    <td></td>
+                                                    <td class="text-right">R 3,000,000.00</td>
+                                                    <td>Temporary Facility</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exposure</td>
+                                                    <td class="text-right gray-single-border">R 153,591,625.61</td>
+                                                    <td></td>
+                                                    <td class="text-right gray-single-border">R 211,600,000.00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Available for Drawdown</td>
+                                                    <td class="text-right gray-single-border">R 58,008,374.39</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="container" id="detailViewD" style="display: none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2><button id="backToSummaryFromD" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp; Company D Pty Ltd</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="table-responsive" style="padding: 10px 10px 30px 10px">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Orders Outstanding</td>
+                                                    <td class="text-right">R 117,574,366.64</td>
+                                                    <td></td>
+                                                    <td class="text-right">R 208,600,000.00</td>
+                                                    <td>Facility</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Invoices Outstanding</td>
+                                                    <td class="text-right">R 6,842.89</td>
+                                                    <td></td>
+                                                    <td class="text-right">R 3,000,000.00</td>
+                                                    <td>Temporary Facility</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exposure</td>
+                                                    <td class="text-right gray-single-border">R 153,591,625.61</td>
+                                                    <td></td>
+                                                    <td class="text-right gray-single-border">R 211,600,000.00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Available for Drawdown</td>
+                                                    <td class="text-right gray-single-border">R 58,008,374.39</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </section>
+
+    </section>
+
+    <footer id="footer">
+        Copyright &copy; 2015 Material Admin
+
+        <ul class="f-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">Reports</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </footer>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="preloader pls-blue">
+            <svg class="pl-circular" viewBox="25 25 50 50">
+                <circle class="plc-path" cx="50" cy="50" r="20" />
+            </svg>
+
+            <p>Please wait...</p>
+        </div>
+    </div>
+
+    <!-- Older IE warning message -->
+    <!--[if lt IE 9]>
+                <div class="ie-warning">
+                    <h1 class="c-white">Warning!!</h1>
+                    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+                    <div class="iew-container">
+                        <ul class="iew-download">
+                            <li>
+                                <a href="http://www.google.com/chrome/">
+                                    <img src="img/browsers/chrome.png" alt="">
+                                    <div>Chrome</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                                    <img src="img/browsers/firefox.png" alt="">
+                                    <div>Firefox</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.opera.com">
+                                    <img src="img/browsers/opera.png" alt="">
+                                    <div>Opera</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.apple.com/safari/">
+                                    <img src="img/browsers/safari.png" alt="">
+                                    <div>Safari</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                    <img src="img/browsers/ie.png" alt="">
+                                    <div>IE (New)</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Sorry for the inconvenience!</p>
+                </div>
+            <![endif]-->
+    <!-- Javascript Libraries -->
+    <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="vendors/bower_components/flot/jquery.flot.js"></script>
+    <script src="vendors/bower_components/flot/jquery.flot.resize.js"></script>
+    <script src="vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
+    <script src="vendors/sparklines/jquery.sparkline.min.js"></script>
+    <script src="vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+
+    <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+    <script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js "></script>
+    <script src="vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+    <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+    <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+    <script src="vendors/bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- Placeholder for IE9 -->
+    <!--[if IE 9 ]>
+                <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+            <![endif]-->
+
+    <script src="js/app.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('body').on('click', '.animation-demo .btn', function () {
+                var animation = $(this).text();
+                var cardImg = $(this).closest('.card').find('img');
+                if (animation === "hinge") {
+                    animationDuration = 2100;
+                }
+                else {
+                    animationDuration = 1200;
+                }
+
+                cardImg.removeAttr('class');
+                cardImg.addClass('animated ' + animation);
+
+                setTimeout(function () {
+                    cardImg.removeClass(animation);
+                }, animationDuration);
+            });
+        });
+
+        $('#viewParentCompanyDetail').on('click', function () {
+            openDetailView("detailViewParent");
+
+            $('#selectedCompanyName').text("Parent Company Pty Ltd");
+            $("#selectedCompanyPic").attr("src", "img/custom/P.png");
+        });
+        
+        $('#viewCompanyADetail').on('click', function () {
+            openDetailView("detailViewA");
+
+            $('#selectedCompanyName').text("Company A Pty Ltd");
+            $("#selectedCompanyPic").attr("src", "img/custom/A.png");
+        });
+
+        $('#viewCompanyBDetail').on('click', function () {
+            openDetailView("detailViewB");
+
+            $('#selectedCompanyName').text("Company B Pty Ltd");
+            $("#selectedCompanyPic").attr("src", "img/custom/B.png");
+        });
+
+        $('#viewCompanyCDetail').on('click', function () {
+            openDetailView("detailViewC");
+
+            $('#selectedCompanyName').text("Company C Pty Ltd");
+            $("#selectedCompanyPic").attr("src", "img/custom/C.png");
+        });
+
+        $('#viewCompanyDDetail').on('click', function () {
+            openDetailView("detailViewD");
+
+            $('#selectedCompanyName').text("Company D Pty Ltd");
+            $("#selectedCompanyPic").attr("src", "img/custom/D.png");
+        });
+
+        function openDetailView(viewName) {
+            var out_animation = 'zoomOut';
+            $('#summaryView').removeAttr('class');
+            $('#summaryView').addClass('animated ' + out_animation);
+            $('#summaryView').hide();
+
+            var viewElementName = '#' + viewName;
+            var in_animation = 'zoomIn';
+            $(viewElementName).removeAttr('class');
+            $(viewElementName).addClass('animated ' + in_animation);
+            $(viewElementName).show();
+
+            $('#chat').addClass('toggled');
+        }
+
+        $('#backToSummaryFromParent').on('click', function () {
+            openSummaryViewFromDetail("detailViewParent");
+        });
+
+        $('#backToSummaryFromA').on('click', function () {
+            openSummaryViewFromDetail("detailViewA");
+        });
+
+        $('#backToSummaryFromB').on('click', function () {
+            openSummaryViewFromDetail("detailViewB");
+        });
+
+        $('#backToSummaryFromC').on('click', function () {
+            openSummaryViewFromDetail("detailViewC");
+        });
+
+        $('#backToSummaryFromD').on('click', function () {
+            openSummaryViewFromDetail("detailViewD");
+        });
+
+        function openSummaryViewFromDetail(fromViewName) {
+            var viewElementName = '#' + fromViewName;
+            var out_animation = 'zoomOut';
+            $(viewElementName).removeAttr('class');
+            $(viewElementName).addClass('animated ' + out_animation);
+            $(viewElementName).hide();
+
+            var in_animation = 'zoomIn';
+            $('#summaryView').removeAttr('class');
+            $('#summaryView').addClass('animated ' + in_animation);
+            $('#summaryView').show();
+
+            $('#selectedCompanyName').text("Parent Company Pty Ltd");
+            $("#selectedCompanyPic").attr("src", "img/custom/P.png");
+
+            $('#chat').removeClass('toggled');
+        }
+
+    </script>
+
+    <style type="text/css">
+        .gray-single-border {
+            border-top: 2px solid #676767 !important;
+            border-bottom: 2px solid #676767 !important;
+        }
+    </style>
+</body>
+
+</html>
