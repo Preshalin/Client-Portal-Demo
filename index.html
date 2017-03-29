@@ -14,6 +14,17 @@
     <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
     <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
 
+
+    <!-- Vendor CSS -->
+    <link href="vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet">
+    <link href="vendors/bower_components/nouislider/distribute/nouislider.min.css" rel="stylesheet">
+    <link href="vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="vendors/bower_components/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+    <link href="vendors/farbtastic/farbtastic.css" rel="stylesheet">
+    <link href="vendors/bower_components/chosen/chosen.css" rel="stylesheet">
+    <link href="vendors/summernote/dist/summernote.css" rel="stylesheet">
+
+
     <!-- CSS -->
     <link href="css/app_1.min.css" rel="stylesheet">
     <link href="css/app_2.min.css" rel="stylesheet">
@@ -72,14 +83,8 @@
                 <li class="active">
                     <a href="index.html"><i class="zmdi zmdi-home"></i> Home</a>
                 </li>
-                <li class="sub-menu">
-                    <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-chart"></i> Documents</a>
-
-                    <ul>
-                        <li><a href="dashboards/analytics.html">Asset Finance</a></li>
-                        <li><a href="dashboards/school.html">Debtor Finance</a></li>
-                        <li><a href="dashboards/school.html">Trade Finance</a></li>
-                    </ul>
+                <li>
+                    <a href="#" id="viewDocuments"><i class="zmdi zmdi-file"></i> Documents</a>
                 </li>
                 <li class="sub-menu">
                     <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-view-compact"></i> Headers</a>
@@ -245,138 +250,6 @@
                 <div class="block-header">
                     <h2>Dashboard</h2>
                 </div>
-                <!--<div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                        <div class="card">
-                            <div class="card-header">
-
-                            </div>
-                            <div class="card-body">
-
-                                <div class="list-group">
-                                    <a class="list-group-item media" href="#">
-                                        <div class="pull-left p-relative">
-                                            <img class="lgi-img" src="img/custom/P.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div>
-                                                December
-                                                <ul class="actions pull-right">
-                                                    <li>
-                                                        <i class="zmdi zmdi-download"></i>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <a class="list-group-item media" href="#">
-                                        <div class="pull-left">
-                                            <img class="lgi-img" src="img/custom/A.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">November</div>
-                                        </div>
-                                    </a>
-
-                                    <a class="list-group-item media" href="#">
-                                        <div class="pull-left">
-                                            <img class="lgi-img" src="img/custom/B.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">October</div>
-                                        </div>
-                                    </a>
-
-                                    <a class="list-group-item media" href="#">
-                                        <div class="pull-left">
-                                            <img class="lgi-img" src="img/custom/C.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">September</div>
-                                        </div>
-                                    </a>
-
-                                    <a class="list-group-item media" href="#">
-                                        <div class="pull-left">
-                                            <img class="lgi-img" src="img/custom/D.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">August</div>
-                                        </div>
-                                    </a>
-
-                                    <a class="list-group-item media" href="#">
-                                        <div class="pull-left p-relative">
-                                            <img class="lgi-img" src="img/custom/P.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">July</div>
-                                        </div>
-                                    </a>
-
-                                    <a class="list-group-item media" href="#">
-                                        <div class="pull-left">
-                                            <img class="lgi-img" src="img/custom/A.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">June</div>
-                                        </div>
-                                    </a>
-
-                                    <a class="list-group-item media" href="#">
-                                        <div class="pull-left">
-                                            <img class="lgi-img" src="img/custom/B.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">May</div>
-                                        </div>
-                                    </a>
-
-                                    <a class="list-group-item media" href="#">
-                                        <div class="pull-left">
-                                            <img class="lgi-img" src="img/custom/C.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">April</div>
-                                        </div>
-                                    </a>
-
-                                    <a class="list-group-item media" href="#">
-                                        <div class="pull-left">
-                                            <img class="lgi-img" src="img/custom/D.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">March</div>
-                                        </div>
-                                    </a>
-
-                                    <a class="list-group-item media" href="#">
-                                        <div class="pull-left">
-                                            <img class="lgi-img" src="img/custom/D.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">February</div>
-                                        </div>
-                                    </a>
-
-                                    <a class="list-group-item media" href="#">
-                                        <div class="pull-left">
-                                            <img class="lgi-img" src="img/custom/D.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">January</div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-2"></div>
-                </div>-->
                 <div class="row">
                     <div class="col-md-3"> </div>
                     <div class="col-md-6">
@@ -553,7 +426,7 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header ch-alt">
                             <h2><button id="backToSummaryFromParent" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; Parent Company Pty Ltd</h2>
                         </div>
                         <div class="card-body">
@@ -960,8 +833,238 @@
                 </div>
                 <div class="col-md-2"></div>
             </div>
-        </section>
 
+            <div class="container" id="documents" style="display: none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card" style="padding-bottom:30px">
+                        <div class="card-header bgm-blue">
+                            <h2> &nbsp; <i class="zmdi zmdi-file"></i><span>&nbsp; Documents</span></h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row" >
+                                <div class="col-md-12">
+
+                                    <div role="tabpanel" class="tab" style="padding: 10px 10px 10px 10px">
+                                        <ul class="tab-nav text-center" role="tablist">
+                                            <li class="active">
+                                                <a href="#dfDocs" aria-controls="dfDocs" role="tab"
+                                                   data-toggle="tab">Debtor Finance</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#tfDocs" aria-controls="tfDocs"
+                                                   role="tab" data-toggle="tab">Trade Finance</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active animated fadeInRight in" id="dfDocs">
+
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="list-group">
+                                                            <a class="list-group-item media" href="#" id="downloadStatementdf">
+                                                                <div class="media-body text-center">
+                                                                    <div class="col-md-12">
+                                                                        <img src="img/custom/statements.png" />
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <small>Statements</small>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="list-group">
+                                                            <a class="list-group-item media" href="#">
+                                                                <div class="media-body text-center">
+                                                                    <div class="col-md-12">
+                                                                        <img src="img/custom/transaction-history.png" />
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <small>Transaction History</small>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="list-group">
+                                                            <a class="list-group-item media" href="#">
+                                                                <div class="media-body text-center">
+                                                                    <div class="col-md-12">
+                                                                        <img src="img/custom/tax-invoice.png" />
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <small>Tax Invoice</small>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div role="tabpanel" class="tab-pane animated fadeInRight" id="tfDocs">
+
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="list-group">
+                                                            <a class="list-group-item media" href="#" id="downloadStatementtf">
+                                                                <div class="media-body text-center">
+                                                                    <div class="col-md-12">
+                                                                        <img src="img/custom/statements.png" />
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <small>Statements</small>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="list-group">
+                                                            <a class="list-group-item media" href="#">
+                                                                <div class="media-body text-center">
+                                                                    <div class="col-md-12">
+                                                                        <img src="img/custom/transaction-history.png" />
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <small>Transaction History</small>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="list-group">
+                                                            <a class="list-group-item media" href="#">
+                                                                <div class="media-body text-center">
+                                                                    <div class="col-md-12">
+                                                                        <img src="img/custom/tax-invoice.png" />
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <small>Tax Invoice</small>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="container" id="documentLevelTwo" style="display:none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header bgm-blue">
+                            <h2><button id="backToDocuments" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp;<i class="zmdi zmdi-file"></i><span></span> &nbsp; Statements</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <div class="list-group lg-odd-black">
+                                        <div class="list-group-item media">
+                                            <div class="pull-left">
+                                                <img class="lgi-img" src="img/custom/D.png" />
+                                            </div>
+                                            <div class="pull-right">
+                                                <div class="actions">
+                                                    <a href="#" aria-expanded="true">
+                                                        <i class="him-icon zmdi zmdi-download"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4>December</h4>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item media">
+                                            <div class="pull-left">
+                                                <img class="lgi-img" src="img/custom/N.png" />
+                                            </div>
+                                            <div class="pull-right">
+                                                <div class="actions">
+                                                    <a href="#" aria-expanded="true">
+                                                        <i class="him-icon zmdi zmdi-download"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4>November</h4>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item media">
+                                            <div class="pull-left">
+                                                <img class="lgi-img" src="img/custom/O.png" />
+                                            </div>
+                                            <div class="pull-right">
+                                                <div class="actions">
+                                                    <a href="#" aria-expanded="true">
+                                                        <i class="him-icon zmdi zmdi-download"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4>October</h4>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item media">
+                                            <div class="pull-left">
+                                                <img class="lgi-img" src="img/custom/S.png" />
+                                            </div>
+                                            <div class="pull-right">
+                                                <div class="actions">
+                                                    <a href="#" aria-expanded="true">
+                                                        <i class="him-icon zmdi zmdi-download"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4>September</h4>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item media">
+                                            <div class="pull-left">
+                                                <img class="lgi-img" src="img/custom/A.png" />
+                                            </div>
+                                            <div class="pull-right">
+                                                <div class="actions">
+                                                    <a href="#" aria-expanded="true">
+                                                        <i class="him-icon zmdi zmdi-download"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4>August</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </section>
+        <div id="activeView" style="display:none"></div>
     </section>
 
     <footer id="footer">
@@ -1047,6 +1150,14 @@
     <script src="vendors/bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
 
+
+    <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+    <script src="vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    <script src="vendors/bower_components/nouislider/distribute/nouislider.min.js"></script>
+    <script src="vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="vendors/bower_components/typeahead.js/dist/typeahead.bundle.min.js"></script>
+    <script src="vendors/bower_components/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="vendors/summernote/dist/summernote-updated.min.js"></script>
     <!-- Placeholder for IE9 -->
     <!--[if IE 9 ]>
                 <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
@@ -1073,96 +1184,114 @@
                     cardImg.removeClass(animation);
                 }, animationDuration);
             });
+
+            $('#activeView').val("summaryView");
         });
 
+        function setActiveView(viewName) {
+            $('#activeView').val(viewName);
+        }
+
+        function getActiveView() {
+            return $('#activeView').val();
+        }
+
         $('#viewParentCompanyDetail').on('click', function () {
-            openDetailView("detailViewParent");
+            openView("detailViewParent");
 
             $('#selectedCompanyName').text("Parent Company Pty Ltd");
             $("#selectedCompanyPic").attr("src", "img/custom/P.png");
         });
         
         $('#viewCompanyADetail').on('click', function () {
-            openDetailView("detailViewA");
+            openView("detailViewA");
 
             $('#selectedCompanyName').text("Company A Pty Ltd");
             $("#selectedCompanyPic").attr("src", "img/custom/A.png");
         });
 
         $('#viewCompanyBDetail').on('click', function () {
-            openDetailView("detailViewB");
+            openView("detailViewB");
 
             $('#selectedCompanyName').text("Company B Pty Ltd");
             $("#selectedCompanyPic").attr("src", "img/custom/B.png");
         });
 
         $('#viewCompanyCDetail').on('click', function () {
-            openDetailView("detailViewC");
+            openView("detailViewC");
 
             $('#selectedCompanyName').text("Company C Pty Ltd");
             $("#selectedCompanyPic").attr("src", "img/custom/C.png");
         });
 
         $('#viewCompanyDDetail').on('click', function () {
-            openDetailView("detailViewD");
+            openView("detailViewD");
 
             $('#selectedCompanyName').text("Company D Pty Ltd");
             $("#selectedCompanyPic").attr("src", "img/custom/D.png");
         });
 
-        function openDetailView(viewName) {
-            var out_animation = 'zoomOut';
-            $('#summaryView').removeAttr('class');
-            $('#summaryView').addClass('animated ' + out_animation);
-            $('#summaryView').hide();
-
-            var viewElementName = '#' + viewName;
-            var in_animation = 'zoomIn';
-            $(viewElementName).removeAttr('class');
-            $(viewElementName).addClass('animated ' + in_animation);
-            $(viewElementName).show();
-
-            $('#chat').addClass('toggled');
-        }
+        $('#viewDocuments').on('click', function () {
+            openView("documents");
+        });
 
         $('#backToSummaryFromParent').on('click', function () {
-            openSummaryViewFromDetail("detailViewParent");
+            openView("summaryView");
         });
 
         $('#backToSummaryFromA').on('click', function () {
-            openSummaryViewFromDetail("detailViewA");
+            openView("summaryView");
         });
 
         $('#backToSummaryFromB').on('click', function () {
-            openSummaryViewFromDetail("detailViewB");
+            openView("summaryView");
         });
 
         $('#backToSummaryFromC').on('click', function () {
-            openSummaryViewFromDetail("detailViewC");
+            openView("summaryView");
         });
 
         $('#backToSummaryFromD').on('click', function () {
-            openSummaryViewFromDetail("detailViewD");
+            openView("summaryView");
         });
 
-        function openSummaryViewFromDetail(fromViewName) {
-            var viewElementName = '#' + fromViewName;
+        function openView(viewName) {
+
+            var fromViewName = '#' + getActiveView();
             var out_animation = 'zoomOut';
-            $(viewElementName).removeAttr('class');
-            $(viewElementName).addClass('animated ' + out_animation);
-            $(viewElementName).hide();
+            $(fromViewName).removeAttr('class');
+            $(fromViewName).addClass('animated ' + out_animation);
+            $(fromViewName).hide();
 
+            var toViewName = '#' + viewName;
             var in_animation = 'zoomIn';
-            $('#summaryView').removeAttr('class');
-            $('#summaryView').addClass('animated ' + in_animation);
-            $('#summaryView').show();
+            $(toViewName).removeAttr('class');
+            $(toViewName).addClass('animated ' + in_animation);
+            $(toViewName).show();
 
-            $('#selectedCompanyName').text("Parent Company Pty Ltd");
-            $("#selectedCompanyPic").attr("src", "img/custom/P.png");
-
-            $('#chat').removeClass('toggled');
+            setActiveView(viewName);
         }
+    
+        $('#downloadStatementdf').on('click', function () {
+            openView("documentLevelTwo");
+        });
 
+        $('#downloadStatementtf').on('click', function () {
+            openView("documentLevelTwo");
+        });
+
+        $('#docStageOneContinue').on('click', function () {
+            $('#docStageOneTab').removeClass('active');
+            $('#docStageOne').removeClass('active');
+            $('#docStageTwoTab').addClass('active');
+            $('#docStageTwo').addClass('active');
+        });
+
+        $('#backToDocuments').on('click', function () {
+            openView("documents");
+        });
+        
+        
     </script>
 
     <style type="text/css">
