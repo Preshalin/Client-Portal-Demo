@@ -28,7 +28,10 @@
     <!-- CSS -->
     <link href="css/app_1.min.css" rel="stylesheet">
     <link href="css/app_2.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
+
+    
 </head>
 
 <body>
@@ -42,15 +45,38 @@
                 </div>
             </li>
 
-            <li class="hi-logo hidden-xs">
-                <a href="index.html">Reichmans<b>Capital</b></a>
+            <li class="hidden-xs">
+                <a href="index.html" class="m-l-10" >
+                    <img src="img/custom/RCHLogo.png" alt=""> 
+                </a>
             </li>
-
             <li class="pull-right">
                 <ul class="hi-menu">
-                    <li class="hidden-xs ma-trigger" data-ma-action="sidebar-open" data-ma-target="#chat">
-                        <a href=""><i class="him-icon zmdi zmdi-comment-alt-text"></i></a>
+                    <li>
+                        <p href="#" style="padding-top:10px;color:#FFFFFF" >Logged in as <b>Parent Company Pty Ltd</b></p>
                     </li>
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" href=""><i class="him-icon zmdi zmdi-account-circle"></i></a>
+                        <ul class="dropdown-menu dm-icon pull-right">
+                            <li class="hidden-xs">
+                                <a data-ma-action="fullscreen" href=""><i class="zmdi zmdi-fullscreen"></i> Toggle Fullscreen</a>
+                            </li>
+                            <li class="divider hidden-xs"></li>
+                            <li>
+                                <a href=""><i class="zmdi zmdi-face"></i>Personal Details</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="zmdi zmdi-settings"></i>Settings</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="zmdi zmdi-sign-in"></i>Sign Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--<li class="hidden-xs ma-trigger" data-ma-action="sidebar-open" data-ma-target="#chat">
+                        <a href=""><i class="him-icon zmdi zmdi-comment-alt-text"></i></a>
+                    </li>-->
                 </ul>
             </li>
         </ul>
@@ -84,9 +110,12 @@
                     <a href="index.html"><i class="zmdi zmdi-home"></i> Home</a>
                 </li>
                 <li>
+                    <a href="#" id="viewFunds"><i class="zmdi zmdi-money-box"></i> Funds</a>
+                </li>
+                <li>
                     <a href="#" id="viewDocuments"><i class="zmdi zmdi-file"></i> Documents</a>
                 </li>
-                <li class="sub-menu">
+                <!--<li class="sub-menu">
                     <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-view-compact"></i> Headers</a>
 
                     <ul>
@@ -190,7 +219,7 @@
                 </li>
                 <li>
                     <a href="https://wrapbootstrap.com/theme/material-admin-responsive-angularjs-WB011H985"><i class="zmdi zmdi-money"></i> Buy this template</a>
-                </li>
+                </li>-->
             </ul>
         </aside>
 
@@ -248,51 +277,18 @@
         <section id="content">
             <div class="container" id="summaryView">
                 <div class="block-header">
-                    <h2>Dashboard</h2>
+                    <h2>Funds</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-3"> </div>
                     <div class="col-md-6">
                         <div class="card" id="parentCard">
-                            <div class="card-header">
+                            <div class="card-header ch-alt">
                                 <h2>
                                     Parent Company Pty Ltd
                                 </h2>
-                                <!--<ul class="actions">
-                                    <li>
-                                        <a href="">
-                                            <i class="zmdi zmdi-refresh-alt"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="zmdi zmdi-download"></i>
-                                        </a>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="" data-toggle="dropdown">
-                                            <i class="zmdi zmdi-more-vert"></i>
-                                        </a>
-
-                                        <ul class="dropdown-menu dropdown-menu-right">
-                                            <li>
-                                                <a href="">Change Date Range</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Change Graph Type</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Other Settings</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>-->
-
-                                <!--<button class="btn bgm-red btn-float waves-effect">
-                                    <i class="zmdi zmdi-plus"></i>
-                                </button>-->
                             </div>
-                            <div class="card-body">
+                            <div class="card-body" style="padding-top:20px">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="card-body">
@@ -434,14 +430,14 @@
                                 <div class="col-md-12">
 
                                     <div role="tabpanel" class="tab" style="padding: 10px 10px 10px 10px">
-                                        <ul class="tab-nav" role="tablist">
+                                        <ul class="tab-nav text-center" role="tablist">
                                             <li class="active">
                                                 <a href="#home9" aria-controls="home9" role="tab"
-                                                   data-toggle="tab">Debtor Finance</a>
+                                                   data-toggle="tab"><img class=lgi-img src="img/custom/DF.png" />&nbsp; Debtor Finance</a>
                                             </li>
                                             <li role="presentation">
                                                 <a href="#messages9" aria-controls="messages9"
-                                                   role="tab" data-toggle="tab">Trade Finance</a>
+                                                   role="tab" data-toggle="tab"><img class=lgi-img src="img/custom/TF.png" />&nbsp; Trade Finance</a>
                                             </li>
                                         </ul>
 
@@ -562,13 +558,19 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header">
-                            <h2><button id="backToSummaryFromA" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp; Company A Pty Ltd</h2>
+                        <div class="card-header ch-alt">
+                            <h2>
+                                <button id="backToSummaryFromA" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp; Company A Pty Ltd
+                            </h2>          
+                        </div>
+                        <div class="card-header text-center" style="padding-top:10px;padding-bottom:0px">
+                            <div>
+                                <img class=lgi-img src="img/custom/DF.png" />&nbsp; &nbsp; DEBTOR FINANCE
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-12">
-
                                     <div class="table-responsive" style="padding: 10px 10px 30px 10px">
                                         <table class="table table-bordered">
                                             <tbody>
@@ -638,8 +640,13 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header ch-alt">
                             <h2><button id="backToSummaryFromB" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp; Company B Pty Ltd</h2>
+                        </div>
+                        <div class="card-header text-center" style="padding-top:10px;padding-bottom:0px">
+                            <div>
+                                <img class=lgi-img src="img/custom/DF.png" />&nbsp; &nbsp; DEBTOR FINANCE
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="row">
@@ -714,8 +721,13 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header ch-alt">
                             <h2><button id="backToSummaryFromC" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp; Company C Pty Ltd</h2>
+                        </div>
+                        <div class="card-header text-center" style="padding-top:10px;padding-bottom:0px">
+                            <div>
+                                <img class=lgi-img src="img/custom/TF.png" />&nbsp; &nbsp; TRADE FINANCE
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="row">
@@ -776,8 +788,13 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header ch-alt">
                             <h2><button id="backToSummaryFromD" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp; Company D Pty Ltd</h2>
+                        </div>
+                        <div class="card-header text-center" style="padding-top:10px;padding-bottom:0px">
+                            <div>
+                                <img class=lgi-img src="img/custom/AF.png" />&nbsp; &nbsp; ASSET FINANCE
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="row">
@@ -835,11 +852,14 @@
             </div>
 
             <div class="container" id="documents" style="display: none">
+                <div class="block-header">
+                    <h2>Documents</h2>
+                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <div class="card" style="padding-bottom:30px">
-                        <div class="card-header bgm-blue">
-                            <h2> &nbsp; <i class="zmdi zmdi-file"></i><span>&nbsp; Documents</span></h2>
+                        <div class="card-header ch-alt">
+                            <h2>  <i class="zmdi zmdi-file"></i><span>&nbsp; Documents</span></h2> 
                         </div>
                         <div class="card-body">
                             <div class="row" >
@@ -849,11 +869,11 @@
                                         <ul class="tab-nav text-center" role="tablist">
                                             <li class="active">
                                                 <a href="#dfDocs" aria-controls="dfDocs" role="tab"
-                                                   data-toggle="tab">Debtor Finance</a>
+                                                   data-toggle="tab"><img class=lgi-img src="img/custom/DF.png" />&nbsp; DEBTOR FINANCE</a>
                                             </li>
                                             <li role="presentation">
                                                 <a href="#tfDocs" aria-controls="tfDocs"
-                                                   role="tab" data-toggle="tab">Trade Finance</a>
+                                                   role="tab" data-toggle="tab"><img class=lgi-img src="img/custom/TF.png" />&nbsp; TRADE FINANCE</a>
                                             </li>
                                         </ul>
 
@@ -869,7 +889,7 @@
                                                                         <img src="img/custom/statements.png" />
                                                                     </div>
                                                                     <div class="col-md-12">
-                                                                        <small>Statements</small>
+                                                                        <small>Account Statements</small>
                                                                     </div>
                                                                 </div>
                                                             </a>
@@ -917,7 +937,7 @@
                                                                         <img src="img/custom/statements.png" />
                                                                     </div>
                                                                     <div class="col-md-12">
-                                                                        <small>Statements</small>
+                                                                        <small>Account Statements</small>
                                                                     </div>
                                                                 </div>
                                                             </a>
@@ -971,8 +991,13 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header bgm-blue">
-                            <h2><button id="backToDocuments" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp;<i class="zmdi zmdi-file"></i><span></span> &nbsp; Statements</h2>
+                        <div class="card-header ch-alt">
+                            <h2><button id="backToDocuments" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp; Statements</h2>
+                        </div>
+                        <div class="card-header text-center" style="padding-top:10px;padding-bottom:10px">
+                            <div>
+                                <img class=lgi-img src="img/custom/DF.png" id="statementForProductImg" />&nbsp; &nbsp;<text id="statementForProduct"> DEBTOR FINANCE</text>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="row">
@@ -986,12 +1011,12 @@
                                             <div class="pull-right">
                                                 <div class="actions">
                                                     <a href="#" aria-expanded="true">
-                                                        <i class="him-icon zmdi zmdi-download"></i>
+                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-collection-pdf"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="media-body">
-                                                <h4>December</h4>
+                                                <div class="lgi-heading" style="padding-top:10px">December</div>
                                             </div>
                                         </div>
                                         <div class="list-group-item media">
@@ -1001,12 +1026,12 @@
                                             <div class="pull-right">
                                                 <div class="actions">
                                                     <a href="#" aria-expanded="true">
-                                                        <i class="him-icon zmdi zmdi-download"></i>
+                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-collection-pdf"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="media-body">
-                                                <h4>November</h4>
+                                                <div class="lgi-heading" style="padding-top:10px">November</div>
                                             </div>
                                         </div>
                                         <div class="list-group-item media">
@@ -1016,12 +1041,12 @@
                                             <div class="pull-right">
                                                 <div class="actions">
                                                     <a href="#" aria-expanded="true">
-                                                        <i class="him-icon zmdi zmdi-download"></i>
+                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-collection-pdf"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="media-body">
-                                                <h4>October</h4>
+                                                <div class="lgi-heading" style="padding-top:10px">October</div>
                                             </div>
                                         </div>
                                         <div class="list-group-item media">
@@ -1031,12 +1056,12 @@
                                             <div class="pull-right">
                                                 <div class="actions">
                                                     <a href="#" aria-expanded="true">
-                                                        <i class="him-icon zmdi zmdi-download"></i>
+                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-collection-pdf"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="media-body">
-                                                <h4>September</h4>
+                                                <div class="lgi-heading" style="padding-top:10px">September</div>
                                             </div>
                                         </div>
                                         <div class="list-group-item media">
@@ -1046,12 +1071,12 @@
                                             <div class="pull-right">
                                                 <div class="actions">
                                                     <a href="#" aria-expanded="true">
-                                                        <i class="him-icon zmdi zmdi-download"></i>
+                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-collection-pdf"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="media-body">
-                                                <h4>August</h4>
+                                                <div class="lgi-heading" style="padding-top:10px">August</div>
                                             </div>
                                         </div>
                                     </div>
@@ -1274,10 +1299,14 @@
     
         $('#downloadStatementdf').on('click', function () {
             openView("documentLevelTwo");
+            $('#statementForProduct').text("DEBTOR FINANCE");
+            $("#statementForProductImg").attr("src", "img/custom/DF.png");
         });
 
         $('#downloadStatementtf').on('click', function () {
             openView("documentLevelTwo");
+            $('#statementForProduct').text("TRADE FINANCE");
+            $("#statementForProductImg").attr("src", "img/custom/TF.png");
         });
 
         $('#docStageOneContinue').on('click', function () {
@@ -1290,7 +1319,9 @@
         $('#backToDocuments').on('click', function () {
             openView("documents");
         });
-        
+        $('#viewFunds').on('click', function () {
+            openView("summaryView");
+        });
         
     </script>
 
