@@ -613,7 +613,7 @@ $(document).ready(function(){
 
     var dataset = [
         {
-            label: "Students",
+            label: "Funds Available",
             data: data1,
             color: "#26A69A",
             points: {
@@ -627,7 +627,7 @@ $(document).ready(function(){
             }
         },
         {
-            label: "Teachers",
+            label: "Facility Limit",
             data: data2,
             xaxis:2,
             color: "#FFC107",
