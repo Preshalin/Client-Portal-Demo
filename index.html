@@ -28,6 +28,9 @@
     <!-- CSS -->
     <link href="css/app_1.min.css" rel="stylesheet">
     <link href="css/app_2.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+
     
 </head>
 
@@ -107,7 +110,7 @@
                     <a href="index.html"><i class="zmdi zmdi-home"></i> Home</a>
                 </li>
                 <li>
-                    <a href="#" id="viewFunds"><i class="zmdi zmdi-file"></i> Funds</a>
+                    <a href="#" id="viewFunds"><i class="zmdi zmdi-money-box"></i> Funds</a>
                 </li>
                 <li>
                     <a href="#" id="viewDocuments"><i class="zmdi zmdi-file"></i> Documents</a>
@@ -274,13 +277,13 @@
         <section id="content">
             <div class="container" id="summaryView">
                 <div class="block-header">
-                    <h2>Dashboard</h2>
+                    <h2>Funds</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-3"> </div>
                     <div class="col-md-6">
                         <div class="card" id="parentCard">
-                            <div class="card-header bgm-bluegray">
+                            <div class="card-header ch-alt">
                                 <h2>
                                     Parent Company Pty Ltd
                                 </h2>
@@ -849,11 +852,14 @@
             </div>
 
             <div class="container" id="documents" style="display: none">
+                <div class="block-header">
+                    <h2>Documents</h2>
+                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <div class="card" style="padding-bottom:30px">
-                        <div class="card-header bgm-blue">
-                            <h2> &nbsp; <i class="zmdi zmdi-file"></i><span>&nbsp; Documents</span></h2>
+                        <div class="card-header ch-alt">
+                            <h2>  <i class="zmdi zmdi-file"></i><span>&nbsp; Documents</span></h2> 
                         </div>
                         <div class="card-body">
                             <div class="row" >
@@ -863,11 +869,11 @@
                                         <ul class="tab-nav text-center" role="tablist">
                                             <li class="active">
                                                 <a href="#dfDocs" aria-controls="dfDocs" role="tab"
-                                                   data-toggle="tab">Debtor Finance</a>
+                                                   data-toggle="tab"><img class=lgi-img src="img/custom/DF.png" />&nbsp; DEBTOR FINANCE</a>
                                             </li>
                                             <li role="presentation">
                                                 <a href="#tfDocs" aria-controls="tfDocs"
-                                                   role="tab" data-toggle="tab">Trade Finance</a>
+                                                   role="tab" data-toggle="tab"><img class=lgi-img src="img/custom/TF.png" />&nbsp; TRADE FINANCE</a>
                                             </li>
                                         </ul>
 
@@ -985,7 +991,7 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header bgm-blue">
+                        <div class="card-header ch-alt">
                             <h2><button id="backToDocuments" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp; Statements</h2>
                         </div>
                         <div class="card-header text-center" style="padding-top:10px;padding-bottom:10px">
@@ -1005,7 +1011,7 @@
                                             <div class="pull-right">
                                                 <div class="actions">
                                                     <a href="#" aria-expanded="true">
-                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-download"></i>
+                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-collection-pdf"></i>
                                                     </a>
                                                 </div>
                                             </div>
@@ -1020,7 +1026,7 @@
                                             <div class="pull-right">
                                                 <div class="actions">
                                                     <a href="#" aria-expanded="true">
-                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-download"></i>
+                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-collection-pdf"></i>
                                                     </a>
                                                 </div>
                                             </div>
@@ -1035,7 +1041,7 @@
                                             <div class="pull-right">
                                                 <div class="actions">
                                                     <a href="#" aria-expanded="true">
-                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-download"></i>
+                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-collection-pdf"></i>
                                                     </a>
                                                 </div>
                                             </div>
@@ -1050,7 +1056,7 @@
                                             <div class="pull-right">
                                                 <div class="actions">
                                                     <a href="#" aria-expanded="true">
-                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-download"></i>
+                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-collection-pdf"></i>
                                                     </a>
                                                 </div>
                                             </div>
@@ -1065,7 +1071,7 @@
                                             <div class="pull-right">
                                                 <div class="actions">
                                                     <a href="#" aria-expanded="true">
-                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-download"></i>
+                                                        <i style="padding-top:10px" class="him-icon zmdi zmdi-collection-pdf"></i>
                                                     </a>
                                                 </div>
                                             </div>
