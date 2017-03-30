@@ -1233,7 +1233,7 @@
                 <div class="col-md-8">
                     <div class="card" style="padding-bottom:30px">
                         <div class="card-header ch-alt">
-                            <h2>  <button id="refreshDocuments" class="btn btn-default btn-icon"><i class="zmdi zmdi-file"></i></button>&nbsp; &nbsp; Documents</h2> 
+                            <h2> <img class="lgi-img" src="img/custom/P.png" id="documentImg"></img>&nbsp; &nbsp; Documents</h2> 
                         </div>
                         <div class="card-body">
                             <div class="row" >
@@ -1452,7 +1452,9 @@
                                             <div class="media-body">
                                                 <div class="lgi-heading" style="padding-top:10px">August</div>
                                             </div>
+                                            
                                         </div>
+                                        <a class="view-more" href="#">View Previous</a>
                                     </div>
 
                                 </div>
@@ -1707,6 +1709,24 @@
 
         $('#viewDocuments').on('click', function () {
             openView("documents");
+            var selectedC = $("#selectedCompanyName").text();
+
+            if (selectedC == "Parent Company Pty Ltd") {
+                $("#documentImg").attr("src", "img/custom/P.png");
+            }
+            else if (selectedC == "Company A Pty Ltd") {
+                $("#documentImg").attr("src", "img/custom/A.png");
+            }
+            else if (selectedC == "Company B Pty Ltd") {
+                $("#documentImg").attr("src", "img/custom/B.png");
+            }
+            else if (selectedC == "Company C Pty Ltd") {
+                $("#documentImg").attr("src", "img/custom/C.png");
+            }
+            else if (selectedC == "Company D Pty Ltd") {
+                $("#documentImg").attr("src", "img/custom/D.png");
+            }
+            
         });
 
         $('#backToSummaryFromParent').on('click', function () {
