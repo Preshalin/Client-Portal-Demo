@@ -344,7 +344,7 @@
                                                 <ul class="lgi-attrs">
                                                     <li>R 1,200,000.00</li>
                                                     <li>2016/06/22</li>
-                                                    <li style="background-color:lightcoral;color:white;font-weight:bold;">Active</li>
+                                                    <li style="background-color:lightcoral;color:white;font-weight:bold;">In Arrears</li>
                                                 </ul>
                                             </div>
                                         </a>
@@ -883,14 +883,26 @@
                                                     <table class="table table-bordered">
                                                         <tbody>
                                                             <tr>
-                                                                <td>Orders Outstanding</td>
+                                                                <td>
+                                                                    <div class="list-group pull-left" style="padding: 0px 0px 0px 0px">
+                                                                        <a class="list-group-item" href="#" id="openOrdersList" style="padding: 0px 0px 0px 0px">
+                                                                            Orders Outstanding
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
                                                                 <td class="text-right">R 117,574,366.64</td>
                                                                 <td></td>
                                                                 <td class="text-right">R 208,600,000.00</td>
                                                                 <td>Facility</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>Invoices Outstanding</td>
+                                                                <td>
+                                                                    <div class="list-group pull-left" style="padding: 0px 0px 0px 0px">
+                                                                        <a class="list-group-item" href="#" id="openInvoicesList" style="padding: 0px 0px 0px 0px">
+                                                                            Invoices Outstanding
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
                                                                 <td class="text-right">R 6,842.89</td>
                                                                 <td></td>
                                                                 <td class="text-right">R 3,000,000.00</td>
@@ -1316,7 +1328,7 @@
                                                                         <img src="img/custom/statements.png" />
                                                                     </div>
                                                                     <div class="col-md-12">
-                                                                        <small>Account Statements</small>
+                                                                        <small>Monthly Statements</small>
                                                                     </div>
                                                                 </div>
                                                             </a>
@@ -1383,6 +1395,21 @@
 
                                 <div class="col-md-12">
                                     <div class="list-group lg-odd-black">
+                                        <div class="list-group-item media">
+                                            <div class="pull-left">
+                                                <img class="lgi-img" src="img/custom/C.png" />
+                                            </div>
+                                            <div class="pull-right">
+                                                <div class="actions">
+                                                    <a href="#" aria-expanded="true">
+                                                        <i style="padding-top:10px;font-size:24pt" class="him-icon zmdi zmdi-collection-pdf"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lgi-heading" style="padding-top:10px">Current</div>
+                                            </div>
+                                        </div>
                                         <div class="list-group-item media">
                                             <div class="pull-left">
                                                 <img class="lgi-img" src="img/custom/D.png" />
@@ -1486,53 +1513,56 @@
                             <div class="row">
 
                                 <div class="col-md-12">
-                                    <div class="list-group lg-odd-black">
-                                        <div class="list-group-item media">
-                                            <div class="pull-left">
-                                                <img class="lgi-img" src="img/custom/2W.png" />
-                                            </div>
-                                            <div class="pull-right">
-                                                <div class="actions">
-                                                    <a href="#" aria-expanded="true">
-                                                        <i style="padding-top:10px;font-size:24pt" class="him-icon zmdi zmdi-collection-pdf"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="lgi-heading" style="padding-top:10px">Last Two Weeks</div>
-                                            </div>
-                                        </div>
-                                        <div class="list-group-item media">
-                                            <div class="pull-left">
-                                                <img class="lgi-img" src="img/custom/M.png" />
-                                            </div>
-                                            <div class="pull-right">
-                                                <div class="actions">
-                                                    <a href="#" aria-expanded="true">
-                                                        <i style="padding-top:10px;font-size:24pt" class="him-icon zmdi zmdi-collection-pdf"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="lgi-heading" style="padding-top:10px">Last Month</div>
-                                            </div>
-                                        </div>
-                                        <div class="list-group-item media">
-                                            <div class="pull-left">
-                                                <img class="lgi-img" src="img/custom/3M.png" />
-                                            </div>
-                                            <div class="pull-right">
-                                                <div class="actions">
-                                                    <a href="#" aria-expanded="true">
-                                                        <i style="padding-top:10px;font-size:24pt" class="him-icon zmdi zmdi-collection-pdf"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="lgi-heading" style="padding-top:10px">Last Three Months</div>
-                                            </div>
-                                        </div>
-                                    </div>
+
+                                    <table class="table table-bordered">
+                                        
+                                        <thead>
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Description</th>
+                                                <th>Amount</th>
+                                                <th>Balance</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>21/02/2017</td>
+                                                <td>Payment 1471</td>
+                                                <td class="text-right"> -1,000.00</td>
+                                                <td class="text-right"> -1,000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>23/02/2017</td>
+                                                <td>Payment 1472</td>
+                                                <td class="text-right"> -2,000.00</td>
+                                                <td class="text-right"> -3,000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>24/02/2017</td>
+                                                <td>Receipt 3025</td>
+                                                <td class="text-right"> 5,000.00</td>
+                                                <td class="text-right"> 2,000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26/02/2017</td>
+                                                <td>Receipt 3026</td>
+                                                <td class="text-right"> 1,000.00</td>
+                                                <td class="text-right"> 3,000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>28/02/2017</td>
+                                                <td>Interest February 2017</td>
+                                                <td class="text-right"> 25.75</td>
+                                                <td class="text-right"> 3,025.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>28/02/2017</td>
+                                                <td>Charges February 2017</td>
+                                                <td class="text-right"> 250.00</td>
+                                                <td class="text-right"> 3,275.75</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
                                 </div>
                             </div>
@@ -1541,6 +1571,91 @@
                 </div>
                 <div class="col-md-2"></div>
             </div>
+
+            <div class="container" id="InvoicesList" style="display:none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header ch-alt">
+                            <h2><button id="backToParentCompanyDetail" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp; <text>Invoices Outstanding</text></h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td>I/AL/RPL77025</td>
+                                                <td class="text-right">R 1,051.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>I/PA/RPL70047</td>
+                                                <td class="text-right">R 3,051.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>I/PA/RPL76305</td>
+                                                <td class="text-right">R 2,805.75</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="container" id="OrdersList" style="display:none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header ch-alt">
+                            <h2><button id="backToParentCompanyDetailO" class="btn btn-danger btn-icon"><i class="zmdi zmdi-arrow-back"></i></button>&nbsp; &nbsp; <text>Orders Outstanding</text></h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td>O/AL/RPL77025</td>
+                                                <td class="text-right">R 25,051.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>O/PA/RPL70047</td>
+                                                <td class="text-right">R 30,051.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>O/PA/RPL76305</td>
+                                                <td class="text-right">R 42,805.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>O/PA/RPL70038</td>
+                                                <td class="text-right">R 20,000.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>O/SP/RPL65821</td>
+                                                <td class="text-right">R 35,051.82</td>
+                                            </tr>
+                                            <tr>
+                                                <td>O/SP/RPL65777</td>
+                                                <td class="text-right">R 55,551.25</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
         </section>
         <div id="activeView" style="display:none"></div>
     </section>
@@ -1838,6 +1953,28 @@
 
         $('#viewFunds').on('click', function () {
             openView("summaryView");
+        });
+
+        $('#openInvoicesList').on('click', function () {
+            openView("InvoicesList");
+        });
+
+        $('#openOrdersList').on('click', function () {
+            openView("OrdersList");
+        });
+        
+        $('#backToParentCompanyDetailO').on('click', function () {
+            openView("detailViewParent");
+
+            $('#selectedCompanyName').text("Parent Company Pty Ltd");
+            $("#selectedCompanyPic").attr("src", "img/custom/P.png");
+        });
+
+        $('#backToParentCompanyDetail').on('click', function () {
+            openView("detailViewParent");
+
+            $('#selectedCompanyName').text("Parent Company Pty Ltd");
+            $("#selectedCompanyPic").attr("src", "img/custom/P.png");
         });
         
     </script>
